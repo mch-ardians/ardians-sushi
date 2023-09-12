@@ -1,0 +1,689 @@
+@font-face {
+    font-family: 'Eugusto Regular';
+    src: url(../assets/fonts/Eugusto\ Free\ Font.otf);
+}
+
+@font-face {
+    font-family: 'Ruluko';
+    src: url(../assets/fonts/Ruluko-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url(../assets/fonts/Urbanist-Medium.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #FCFCFC;
+}
+
+.header-container{
+    position: fixed;
+    padding: 1.5rem 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 47%, rgba(90,107,110,1) 100%);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FCFCFC;
+    font-size: 1.8rem;
+    font-family: 'Ruluko', sans-serif;
+}
+
+.logo img{
+    width: 4rem;
+    height: 2.5rem;
+}
+
+.navbar .navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+
+.navbar-nav li{
+    list-style: none;
+}
+
+.navbar-nav li .items{
+    color: #FCFCFC;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: 'Urbanist', sans-serif;
+    transition: .5s;
+}
+
+.navbar-nav li .items:hover{
+    color: #FFD59E;
+}
+
+.navbar-nav li:last-child{
+    position: absolute;
+    visibility: hidden;  
+}
+
+.navbar .btn{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #FCFCFC;
+    padding: 0.5rem 2rem;
+    background-color: #F85050;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    font-family: 'Urbanist', sans-serif;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.364);
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.356);
+}
+
+.navbar .toggle-box{
+    display: none;
+}
+
+#content{
+    width: 75vw;
+    float: left;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 9rem 0;
+    background-image: url(../assets/image/header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.head-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.head-content .title-content{
+    font-family: 'Eugusto Regular', serif;
+    font-size: 10rem;
+    color: #FCFCFC;
+}
+
+.header-content img{
+    width: 3.15rem;
+}
+
+.head-content .title-desc{
+    display: flex;
+    align-items: center;
+}
+
+.title-desc .description{
+    color: #FCFCFC;
+    font-size: 1.6rem;
+    width: 18.75rem;
+    text-align: justify;
+}
+
+.title-desc .btn-menu{
+    text-decoration: none;
+    border-radius: 3.15rem;
+    padding: 1.2rem 2rem;
+    color: #FCFCFC;
+    background-color: #F85050;
+    margin-left: 3rem;
+}
+
+.sub-body-container{
+    height: auto;
+    background-color: #FCFCFC;
+    padding: 2rem 0;
+    box-sizing: border-box;
+}
+
+.sub-body-title{
+    font-family: 'Eugusto Regular', serif;
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.card-content-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 18.8rem;
+    height: 28rem;
+    box-sizing: border-box;
+}
+
+.card-content .circular-img{
+    width: 15.6rem;
+    height: 15rem;
+    border-radius: 22.5rem;
+    background-repeat: no-repeat;
+    background-size: 15.6rem;
+    object-fit: contain;
+}
+
+.card-content .circular-img.st{
+    background-image: url(../assets/image/circular1.png);
+}
+
+.card-content .circular-img.nd{
+    background-image: url(../assets/image/circular2.png);
+}
+
+.card-content .circular-img.rd{
+    background-image: url(../assets/image/circular3.png);
+}
+
+.card-title-container{
+    width: 14.3rem;
+}
+
+.card-title-container .card-title{
+    font-family: 'Ruluko', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.card-desc-container{
+    width: 16.25rem;
+}
+
+.card-desc-container .card-desc{
+    font-family: 'Ruluko', Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.menu-container{
+    background-image: url(../assets/image/menu-bg.png);
+    height: auto;
+    padding: 2rem 0;
+}
+
+.card-menu-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card-menu{
+    width: 18.75rem;
+    height: 25rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.3);
+    transition: .5s;
+}
+
+.img-container{
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-container .menu-img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.menu-desc{
+    background-color: #FCFCFC;
+    height: 100%;
+    padding: 10px 0 10px 7px;
+    text-align: center;
+}
+
+.menu-desc .menu-title{
+    font-family: 'Urbanist', sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 10px 0;
+}
+
+.menu-desc .price{
+    font-size: 1.25rem;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.menu-desc .buy{
+    display: inline-block;
+    text-decoration: none;
+    color: #FCFCFC;
+    background-color: #28a745;
+    height: 2rem;
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px 0;
+    letter-spacing: 2.5px;
+    margin: 10px 0;
+}
+
+.end-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.end-bg{
+    background-image: url(../assets/image/end-bg.png);
+    width: 21.8rem;
+    height: 21.8rem;
+    border-radius: 1.8rem;
+    background-size: cover;
+    box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.07);
+    -moz-box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.07);
+}
+
+.sub-end-container{
+    width: 31.25rem;
+}
+
+.end-title{
+    font-family: 'Eugusto Regular', serif;
+    font-size: 3.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.end-desc{
+    font-family: 'Ruluko', Arial, Helvetica, sans-serif;
+    line-height: 1.8rem;
+    font-size: 1.25rem;
+    font-weight: lighter;
+    word-spacing: 10px;
+}
+
+.closing-content-container{
+    background-color: #171717;
+    height: auto;
+    width: 100vw;
+    padding: 3rem 0;
+}
+
+.closing-title{
+    font-family: 'Eugusto Regular', serif;
+    color: #FCFCFC;
+    font-size: 3.75rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.ref-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ref-container:last-child{
+    margin-bottom: 0;
+}
+
+.ref{
+    display: flex;
+    padding: 0 0 0 10px;
+    width: 40%;
+    color: #FCFCFC;
+    font-family: 'Urbanist', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.set{
+    display: flex;
+    flex-grow: 1;
+    color: #FCFCFC;
+    font-family: 'Ruluko', sans-serif;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+.ref-container .email{
+    text-decoration: none;
+}
+
+.ref-container .email:hover{
+    text-decoration: underline;
+}
+
+.profile-col{
+    float: right;
+    width: 25vw;
+    height: auto;
+}
+
+.card-profile .profile{
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-profile .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    font-size: 1rem;
+    font-family: 'Ruluko', sans-serif;
+}
+
+.title-profile{
+    padding-top: 8rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Eugusto Regular', serif;
+    font-size: 2rem;
+}
+
+.foot-con{
+    width: 100vw;
+    height: auto;
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-top: 1px #FCFCFC solid;
+}
+
+.rights{
+    color: #FCFCFC;
+    font-family: 'Ruluko', sans-serif;
+    font-size: 1.8rem;
+}
+
+.sosmed-con{
+    display: flex;
+}
+
+.link{
+    list-style: none;
+    margin-left: 1.25rem;
+    border-radius: 22.5rem;
+    overflow: hidden;
+}
+
+.sosmed-logo{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 900px) and (max-width: 1200px){
+    html{
+        font-size: 68%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+    html{
+        font-size: 68%;
+    }
+
+    #content{
+        width: 100vw;
+    }
+
+    .navbar{
+        align-items: center;
+    }
+
+    .navbar .toggle-box{
+        display: flex;
+        height: 1.5rem;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .navbar .toggle-box span{
+        width: 1.75rem;
+        display: block;
+        height: 0.2rem;
+        background-color: #FCFCFC;
+        transition: transform .5s, opacity .25s;
+    }
+
+    .navbar .toggle-box.active span:first-child{
+        transform: translateY(0.8rem) rotate(45deg);
+    }
+
+    .navbar .toggle-box.active span:nth-child(2){
+        opacity: 0;
+    }
+
+    .navbar .toggle-box.active span:last-child{
+        transform: translateY(-0.5rem) rotate(-45deg);
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 5.6rem;
+        right: 0;
+        left: 0;
+        height: 15.5rem;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: whitesmoke;
+        outline: gray;
+        border-radius: 5px;
+        visibility: hidden;
+    }
+
+    .navbar-nav li .items{
+        font-size: 1rem;
+        color: black;
+        transition: none;
+    }
+
+    .navbar .navbar-nav.trigger{
+        visibility: visible;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        border:.05rem solid rgba(0,0,0,.3);
+    }
+
+    .navbar-nav li:last-child.trigger{
+        visibility: visible;
+        position: unset;
+    }
+
+    .navbar .btn, .foot-con .logo, .sosmed-con, .header-content img{
+        display: none;
+    }
+
+    .profile-col{
+        width: 100vw;
+        padding: 3rem 0;
+    }
+
+    .card-profile .profile{
+        width: 25%;
+    }
+
+    .card-profile .title-profile{
+        padding: 0;
+    }
+
+    .card-profile .info{
+        font-size: 1.5rem;
+        
+    }
+}
+
+@media screen and (max-width: 600px){
+    #content{
+        width: 100vw;
+    }
+
+    .head-content .title-content{
+        font-size: 5rem;
+    }
+
+    .title-desc .description{
+        font-size: 0.8rem;
+    }
+
+    .title-desc .btn-menu{
+        padding: 1.2rem 1rem;
+    }
+
+    .title-desc .description{
+        width: 9.3rem;
+    }
+
+    .navbar{
+        align-items: center;
+    }
+
+    .navbar .toggle-box{
+        display: flex;
+        height: 1.5rem;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .navbar .toggle-box span{
+        width: 1.75rem;
+        display: block;
+        height: 0.2rem;
+        background-color: #FCFCFC;
+        transition: transform .5s, opacity .25s;
+    }
+
+    .navbar .toggle-box.active span:first-child{
+        transform: translateY(0.8rem) rotate(45deg);
+    }
+
+    .navbar .toggle-box.active span:nth-child(2){
+        opacity: 0;
+    }
+
+    .navbar .toggle-box.active span:last-child{
+        transform: translateY(-0.5rem) rotate(-45deg);
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 5.6rem;
+        right: 0;
+        left: 0;
+        height: 15.5rem;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: whitesmoke;
+        outline: gray;
+        border-radius: 5px;
+        visibility: hidden;
+    }
+
+    .navbar-nav li .items{
+        font-size: 1rem;
+        color: black;
+        transition: none;
+    }
+
+    .navbar .navbar-nav.trigger{
+        visibility: visible;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        border:.05rem solid rgba(0,0,0,.3);
+    }
+
+    .navbar-nav li:last-child.trigger{
+        visibility: visible;
+        position: unset;
+    }
+
+    .sub-end-container{
+        width: fit-content;
+    }
+
+    .end-container{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+    
+    .closing-title{
+        padding-bottom: 1.5rem;
+    }
+
+    .ref-container{
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+
+    .ref{
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        padding: 0;
+        font-size: 2rem;
+    }
+
+    .set{
+        font-size: 1.25rem;
+    }
+
+    .profile-col{
+        width: 100vw;
+        padding: 3rem 0;
+    }
+
+    .card-profile .title-profile{
+        padding: 0;
+    }
+
+    .navbar .btn, .foot-con .logo, .sosmed-con, .header-content img{
+        display: none;
+    }
+
+    .rights{
+        font-size: 0.9rem;
+    }
+}
